@@ -1,0 +1,62 @@
+{
+    "keys": [
+        {"label": "SHIFT", "row": 0, "col": 0, "color": "#fbc02d", "text_color": "#000"},
+        {"label": "ALPHA", "row": 0, "col": 1, "color": "#e57373"},
+        {"label": "UP", "row": 0, "col": 2, "color": "#424242"},
+        {"label": "DOWN", "row": 0, "col": 3, "color": "#424242"},
+        {"label": "MODE", "row": 0, "col": 4, "color": "#424242"},
+        {"label": "ON", "row": 0, "col": 5, "color": "#424242"},
+
+        {"label": "x^-1", "row": 1, "col": 0, "color": "#212121"},
+        {"label": "nCr", "row": 1, "col": 1, "color": "#212121"},
+        {"label": "LEFT", "row": 1, "col": 2, "color": "#424242"},
+        {"label": "RIGHT", "row": 1, "col": 3, "color": "#424242"},
+        {"label": "Pol", "row": 1, "col": 4, "color": "#212121"},
+        {"label": "x^3", "row": 1, "col": 5, "color": "#212121"},
+
+        {"label": "ab/c", "row": 2, "col": 0, "color": "#212121"},
+        {"label": "sqrt", "row": 2, "col": 1, "color": "#212121"},
+        {"label": "x^2", "row": 2, "col": 2, "color": "#212121"},
+        {"label": "hat", "row": 2, "col": 3, "color": "#212121"},
+        {"label": "log", "row": 2, "col": 4, "color": "#212121"},
+        {"label": "ln", "row": 2, "col": 5, "color": "#212121"},
+
+        {"label": "(-)", "row": 3, "col": 0, "color": "#212121"},
+        {"label": "deg", "row": 3, "col": 1, "color": "#212121"},
+        {"label": "hyp", "row": 3, "col": 2, "color": "#212121"},
+        {"label": "sin", "row": 3, "col": 3, "color": "#212121"},
+        {"label": "cos", "row": 3, "col": 4, "color": "#212121"},
+        {"label": "tan", "row": 3, "col": 5, "color": "#212121"},
+
+        {"label": "RCL", "row": 4, "col": 0, "color": "#212121"},
+        {"label": "ENG", "row": 4, "col": 1, "color": "#212121"},
+        {"label": "(", "row": 4, "col": 2, "color": "#212121"},
+        {"label": ")", "row": 4, "col": 3, "color": "#212121"},
+        {"label": ",", "row": 4, "col": 4, "color": "#212121"},
+        {"label": "M+", "row": 4, "col": 5, "color": "#212121"},
+
+        {"label": "7", "row": 5, "col": 0, "color": "#424242", "size": [60, 40], "sublabel": "PQRS"},
+        {"label": "8", "row": 5, "col": 1, "color": "#424242", "size": [60, 40], "sublabel": "TUV"},
+        {"label": "9", "row": 5, "col": 2, "color": "#424242", "size": [60, 40], "sublabel": "WXYZ"},
+        {"label": "DEL", "row": 5, "col": 3, "color": "#e57373", "size": [60, 40]},
+        {"label": "AC", "row": 5, "col": 4, "color": "#e57373", "size": [60, 40]},
+
+        {"label": "4", "row": 6, "col": 0, "color": "#424242", "size": [60, 40], "sublabel": "GHI"},
+        {"label": "5", "row": 6, "col": 1, "color": "#424242", "size": [60, 40], "sublabel": "JKL"},
+        {"label": "6", "row": 6, "col": 2, "color": "#424242", "size": [60, 40], "sublabel": "MNO"},
+        {"label": "x", "row": 6, "col": 3, "color": "#424242", "size": [60, 40]},
+        {"label": "/", "row": 6, "col": 4, "color": "#424242", "size": [60, 40]},
+
+        {"label": "1", "row": 7, "col": 0, "color": "#424242", "size": [60, 40]},
+        {"label": "2", "row": 7, "col": 1, "color": "#424242", "size": [60, 40], "sublabel": "ABC"},
+        {"label": "3", "row": 7, "col": 2, "color": "#424242", "size": [60, 40], "sublabel": "DEF"},
+        {"label": "+", "row": 7, "col": 3, "color": "#424242", "size": [60, 40]},
+        {"label": "-", "row": 7, "col": 4, "color": "#424242", "size": [60, 40]},
+
+        {"label": "0", "row": 8, "col": 0, "color": "#424242", "size": [60, 40], "sublabel": "SPACE"},
+        {"label": ".", "row": 8, "col": 1, "color": "#424242", "size": [60, 40], "sublabel": ".,?!"},
+        {"label": "exp", "row": 8, "col": 2, "color": "#424242", "size": [60, 40]},
+        {"label": "Ans", "row": 8, "col": 3, "color": "#424242", "size": [60, 40]},
+        {"label": "=", "row": 8, "col": 4, "color": "#424242", "size": [60, 40]}
+    ]
+}

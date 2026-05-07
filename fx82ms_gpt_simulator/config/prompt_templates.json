@@ -1,0 +1,10 @@
+{
+    "templates": {
+        "DEFINE": "Define {input} in a compact way for a 4-line calculator OLED.",
+        "EXPLAIN": "Explain {input} simply in max 4 lines of 18 chars.",
+        "SOLVE": "Solve {input}. Show only key steps in max 4 OLED lines.",
+        "FORMULA": "Give the main formula for {input}. Max 4 OLED lines.",
+        "CONVERT": "Convert {input}. Return only the final result.",
+        "FREE_ASK": "{input}"
+    }
+}

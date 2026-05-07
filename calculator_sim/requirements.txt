@@ -1,0 +1,4 @@
+windows-curses; platform_system == 'Windows'
+httpx
+pydantic
+asyncio
