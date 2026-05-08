@@ -6,8 +6,8 @@ class OLEDView(QWidget):
     """Simulates a 0.91 inch 128x32 OLED module."""
     def __init__(self):
         super().__init__()
-        # Optimized OLED module height to prevent clipping (160x50)
-        self.setFixedSize(160, 50) 
+        # Optimized OLED module height to prevent clipping (160x60)
+        self.setFixedSize(160, 60) 
         self.setStyleSheet(OLED_STYLE)
         
         layout = QVBoxLayout()

@@ -120,18 +120,36 @@ class MainWindow(QMainWindow):
         self.esp32.set_state(ESP32State.BOOTING)
         self.oled.update_display(["", "  CASIO COMPUTER", "   INITIALIZING", ""])
         
-        def finish_boot():
+        def check_wifi():
+            result = self.api.ask("health_check") # We can use /health endpoint actually
+            # Let's check health directly
+            try:
+                import requests
+                r = requests.get("http://localhost:8001/health", timeout=1)
+                if r.status_code == 200:
+                    self.esp32.connect_wifi()
+                    self.debug_window.log_api("WiFi Connected to Bridge")
+            except:
+                pass
             self.esp32.set_state(ESP32State.IDLE)
             self.show_main_menu()
             
-        QTimer.singleShot(1000, finish_boot)
+        QTimer.singleShot(1500, check_wifi)
 
     def show_main_menu(self):
         self.oled.update_display(["", "   CASIO fx-82MS", "  [ALPHA]=GPT", "  [ON]=CALC"])
 
     def show_gpt_menu(self):
         self.esp32.set_state(ESP32State.GPT_MENU)
-        display_lines = ["GPT MENU (1-6):"]
+        
+        # Add scroll indicators if not at boundaries (though it wraps, indicators help orient)
+        header = "GPT MENU (1-6)"
+        if self.selected_menu_idx > 0:
+            header += " ^"
+        if self.selected_menu_idx < len(self.gpt_menu_options) - 1:
+            header += " v"
+            
+        display_lines = [header]
         # Show a window of 3 options
         start = self.selected_menu_idx
         for i in range(3):
@@ -287,3 +305,13 @@ class MainWindow(QMainWindow):
         self.esp32.update()
         self.mcp.scan()
         self.debug_window.update()
+        
+        # Periodic WiFi check if disconnected
+        if not self.esp32.wifi_connected and self.esp32.uptime % 10 == 0:
+            try:
+                import requests
+                r = requests.get("http://localhost:8001/health", timeout=0.5)
+                if r.status_code == 200:
+                    self.esp32.connect_wifi()
+            except:
+                pass

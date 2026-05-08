@@ -58,7 +58,7 @@ OLED_LABEL_STYLE = """
     QTextEdit {
         color: #00d4ff;
         font-family: 'Courier New', monospace;
-        font-size: 11px;
+        font-size: 10px;
         font-weight: bold;
         line-height: 100%;
         background: transparent;

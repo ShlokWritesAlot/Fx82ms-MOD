@@ -19,6 +19,7 @@ class MultiTapHandler(QObject):
         
         # Multi-tap mappings
         self.layout = {
+            "1": ".,@#1",
             "2": "ABC2",
             "3": "DEF3",
             "4": "GHI4",

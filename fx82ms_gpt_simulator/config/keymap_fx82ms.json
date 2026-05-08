@@ -47,7 +47,7 @@
         {"label": "x", "row": 6, "col": 3, "color": "#424242", "size": [60, 40]},
         {"label": "/", "row": 6, "col": 4, "color": "#424242", "size": [60, 40]},
 
-        {"label": "1", "row": 7, "col": 0, "color": "#424242", "size": [60, 40]},
+        {"label": "1", "row": 7, "col": 0, "color": "#424242", "size": [60, 40], "sublabel": ".,@#"},
         {"label": "2", "row": 7, "col": 1, "color": "#424242", "size": [60, 40], "sublabel": "ABC"},
         {"label": "3", "row": 7, "col": 2, "color": "#424242", "size": [60, 40], "sublabel": "DEF"},
         {"label": "+", "row": 7, "col": 3, "color": "#424242", "size": [60, 40]},
