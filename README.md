@@ -1,5 +1,7 @@
 # Casio fx-82MS GPT Desktop Simulator
 
+You can now simulate this project at wowki at **https://wokwi.com/projects/463440511518280705**
+
 This is a professional desktop GUI simulator for the Casio fx-82MS AI Mod project. It allows you to test the full system behavior—from matrix scanning to AI response formatting—before your hardware arrives.
 
 ## Features
