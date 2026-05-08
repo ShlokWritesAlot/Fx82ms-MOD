@@ -3,7 +3,7 @@ import time
 
 class AIClient:
     """Synchronous client to interact with the local FastAPI bridge (designed for threading)."""
-    def __init__(self, base_url="http://localhost:8000"):
+    def __init__(self, base_url="http://localhost:8001"):
         self.base_url = base_url
         self.last_latency = 0
 
